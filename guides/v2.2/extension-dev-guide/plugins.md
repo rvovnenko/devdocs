@@ -44,7 +44,7 @@ You must specify these elements:
 
 * `type name`. A class or interface which the plugin observes.
 * `plugin name`. An arbitrary plugin name that identifies a plugin. Also used to merge the configurations for the plugin.
-* `plugin type`. The name of a plugin's class or its virtual type. Use the following naming convention when you specify this element: `\Vendor\Module\Plugin\<ClassName>`.
+* `plugin type`. The name of a plugin's class or its virtual type.
 
 The following elements are optional:
 
@@ -56,6 +56,8 @@ The following elements are optional:
 By applying code before, after, or around a public method, a plugin extends or modifies that method's behavior.
 
 The first argument for the before, after, and around methods is an object that provides access to all public methods of the observed method's class.
+
+Use the following naming convention for the plugin classes: `\Vendor\Module\Plugin\<ClassName>`.
 
 #### Before methods
 
